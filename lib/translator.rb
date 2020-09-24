@@ -18,7 +18,6 @@ def get_japanese_emoticon(file_to_load, emoticon)
   hash.each do |emoji, language|
     if language[:english] == emoticon
       language.select do |a|
-        a[:japanese]
         binding.pry
       end
     end
