@@ -19,6 +19,7 @@ def get_japanese_emoticon(file_to_load, emoticon)
     puts a 
     binding.pry
   end
+  binding.pry 
 end
 
 def get_english_meaning
