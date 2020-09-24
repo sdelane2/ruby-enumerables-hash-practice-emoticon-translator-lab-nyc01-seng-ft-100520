@@ -21,7 +21,7 @@ def get_japanese_emoticon(file_to_load, emoticon)
       variable = language[:japanese]
     end
   end
-  if variable = nil
+  if variable == nil
     return "Sorry, that emoticon was not found"
   else
     return variable
