@@ -16,9 +16,8 @@ def get_japanese_emoticon(file_to_load, emoticon)
   hash = load_library(file_to_load)
   #binding.pry 
   hash.detect do |emoji, language|
-    puts "Sorry, that emoticon was not found" if language[:english] != emoticon 
      if language[:english] == emoticon 
-        emoticon = language[:japanese]
+        return emoticon = language[:japanese]
       else
         puts "Sorry, that emoticon was not found"
     end
