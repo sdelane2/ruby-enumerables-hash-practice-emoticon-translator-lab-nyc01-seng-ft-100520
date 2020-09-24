@@ -19,7 +19,7 @@ def get_japanese_emoticon(file_to_load, emoticon)
      if language[:english] == emoticon 
         return emoticon = language[:japanese]
       else
-        puts "Sorry, that emoticon was not found"
+        return "Sorry, that emoticon was not found"
     end
   end
 end
