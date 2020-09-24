@@ -33,7 +33,7 @@ def get_english_meaning(file_to_load, emoticon)
   variable = nil 
   hash.each do |emoji, language|
     if language[:japanese] == emoticon
-      variable = language[:english]
+      variable = [:english]
     end
   end
   if variable == nil
