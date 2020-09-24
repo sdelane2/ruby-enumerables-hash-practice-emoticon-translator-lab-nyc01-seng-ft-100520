@@ -22,7 +22,9 @@ def get_japanese_emoticon(file_to_load, emoticon)
     end
   end
   if response = nil
-    puts 
+    return "Sorry, that emoticon was not found"
+  else
+    
 end
 
 def get_english_meaning
