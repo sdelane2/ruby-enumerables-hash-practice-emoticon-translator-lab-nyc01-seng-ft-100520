@@ -2,14 +2,14 @@
 require 'yaml'
 require 'pry'
 
-def load_library(file_to_load)
-  new_hash = {}
-  YAML.load_file(file_to_load).each do |key, value|
-    if !new_hash[key]
-      new_hash[key] = {:english => value[0], :japanese => value[1]}
-    end
+def load_library(yaml_file)
+  response = {"get_meaning" => {}, "get_emoticon" => {}}
+  library = YAML.load_file(yaml_file)
+  library.each do |trans, emos|
+    response["get_meaning"][emos[1]] = trans
+    response["get_emoticon"][emos[0]] = emos[1]
   end
-  new_hash
+  response
 end
 
 def get_japanese_emoticon(file_to_load, emoticon)
