@@ -17,7 +17,6 @@ def get_japanese_emoticon(file_to_load, emoticon)
   #binding.pry 
   hash[:english].each do |a, b|
     puts a 
-    binding.pry
   end
   binding.pry 
 end
