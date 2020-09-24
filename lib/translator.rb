@@ -19,6 +19,7 @@ def get_japanese_emoticon(file_to_load, emoticon)
     if language[:english] == emoticon 
       emoticon = language[:japanese]
       emoticon
+      binding.pry 
     end
   end
 end
