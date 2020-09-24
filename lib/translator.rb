@@ -21,6 +21,8 @@ def get_japanese_emoticon(file_to_load, emoticon)
       response = language[:japanese]
     end
   end
+  if response = nil
+    puts 
 end
 
 def get_english_meaning
