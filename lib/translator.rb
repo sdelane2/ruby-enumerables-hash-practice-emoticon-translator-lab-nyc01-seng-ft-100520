@@ -31,7 +31,7 @@ def get_japanese_emoticon(file_to_load, emoticon)
     new_array2 << value[1]
   end
   puts "I'm sorry" if !new_array2.include?(emoticon)
-  puts "#{emoticon}" new_array.include?(emoticon)
+  puts "#{emoticon}" if new_array2.include?(emoticon)
 end
 
 
