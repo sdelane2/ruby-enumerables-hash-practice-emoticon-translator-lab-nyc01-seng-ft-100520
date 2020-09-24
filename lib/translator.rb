@@ -17,10 +17,12 @@ def get_japanese_emoticon(file_to_load, emoticon)
   #binding.pry 
   hash[:english].each do |a, b|
     if a == emoticon 
-      binding.pry 
-      b = emoticon
+      binding.pry
     end
   end
+end
+      b = emoticon
+      
 end
     
   end
