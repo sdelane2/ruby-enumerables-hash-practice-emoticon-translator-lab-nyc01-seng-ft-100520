@@ -13,6 +13,7 @@ def load_library(file_to_load)
 end
 
 def get_japanese_emoticon(file_to_load, emoticon)
+  emoticon = "#{emoticon}"
   hash = load_library(file_to_load)
   #binding.pry 
   hash.detect do |emoji, language|
@@ -29,8 +30,10 @@ def get_japanese_emoticon(file_to_load, emoticon)
   new_array.each do |language, value|
     new_array2 << value[1]
   end
-  puts "I'm sorry"
+  puts "I'm sorry" if !new_array2.include?(emoticon)
+  puts "#{emoticon}" new_array.include?(emoticon)
 end
+
 
 
 def get_english_meaning
