@@ -19,8 +19,7 @@ def get_japanese_emoticon(file_to_load, emoticon)
   hash.detect do |emoji, language|
      if language[:english] == emoticon 
       emoticon = language[:japanese]
-      return emoticon unless 
-    end 
+    end
   end
   new_array = []
   hash.collect do |emoji, language|
