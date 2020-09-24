@@ -29,7 +29,7 @@ def get_japanese_emoticon(file_to_load, emoticon)
   new_array.each do |language, value|
     new_array2 << value[1]
   end
-  
+  puts "I'm sorry"
 end
 
 
