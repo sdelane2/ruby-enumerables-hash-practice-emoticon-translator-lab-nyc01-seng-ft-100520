@@ -18,7 +18,7 @@ def get_japanese_emoticon(file_to_load, emoticon)
   response = nil 
   hash.each do |emoji, language|
     if language[:english] == emoticon
-      
+      response = language[:japanese]
     end
   end
 end
