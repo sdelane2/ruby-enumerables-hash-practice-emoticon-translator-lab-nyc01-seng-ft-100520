@@ -17,7 +17,7 @@ def get_japanese_emoticon(file_to_load, emoticon)
   #binding.pry 
   hash.each do |emoji, language|
     if language[:english] == emoticon 
-      puts language[:japanese]
+      puts "{#language[:japanese]}"
     end
   end
 end
