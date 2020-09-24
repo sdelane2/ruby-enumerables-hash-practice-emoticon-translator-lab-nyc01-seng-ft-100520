@@ -16,7 +16,12 @@ def get_japanese_emoticon(file_to_load, emoticon)
   hash = load_library(file_to_load)
   #binding.pry 
   hash[:english].each do |a, b|
-    
+    if a == emoticon 
+      binding.pry 
+      b = emoticon
+    end
+  end
+end
     
   end
   binding.pry 
