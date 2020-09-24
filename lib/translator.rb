@@ -18,6 +18,8 @@ def get_japanese_emoticon(file_to_load, emoticon)
   hash.map do |emoji, language|
     if language[:english] == emoticon 
       emoticon = language[:japanese]
+    else
+      puts "Sorry"
     end
   end
   emoticon
