@@ -23,16 +23,6 @@ def get_japanese_emoticon(file_to_load, emoticon)
   end
   emoticon 
 end
-  new_array = []
-  hash.collect do |emoji, language|
-    new_array << language.to_a
-  end
-  new_array2 = []
-  new_array.each do |language, value|
-    new_array2 << value[1]
-  end
-  puts "Sorry, that emoticon was not found" if !new_array2.include?(emoticon)
-end
 
 
 
