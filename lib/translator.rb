@@ -19,10 +19,9 @@ def get_japanese_emoticon(file_to_load, emoticon)
      break if language[:english] == emoticon 
          return emoticon = language[:japanese]
        end
-    end
-  end
-end
-
+     end
+   end
+ end
 
 
 def get_english_meaning
