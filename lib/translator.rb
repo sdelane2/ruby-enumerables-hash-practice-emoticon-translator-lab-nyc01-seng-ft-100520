@@ -13,7 +13,6 @@ def load_library(file_to_load)
 end
 
 def get_japanese_emoticon(file_to_load, emoticon)
-  emoticon = "#{emoticon}"
   hash = load_library(file_to_load)
   #binding.pry 
   hash.detect do |emoji, language|
